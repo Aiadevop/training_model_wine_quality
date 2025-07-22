@@ -29,21 +29,20 @@ The project is divided into several key stages:
 
 ## 📊 Performance Summary
 
-The final model's performance on the test set (using a custom threshold) is as follows:
+The final XGBoost model’s performance on the test set (with a custom threshold) is as follows:
 
-| Class           | Precision | Recall | F1-Score | Support |
-|-----------------|-----------|--------|----------|---------|
-| Low Quality (0) | 0.827     | 0.772  | 0.799    | 149     |
-| High Quality (1)| 0.812     | 0.860  | 0.835    | 171     |
+| Class            | Precision | Recall | F1-Score | Support |
+|------------------|-----------|--------|----------|---------|
+| Low Quality (0)  |   0.819   | 0.819  |  0.819   |   149   |
+| High Quality (1) |   0.842   | 0.842  |  0.842   |   171   |
 
 **Overall metrics:**
 
-- **Accuracy:** 81.9%  
-- **Macro Avg F1-Score:** 0.817  
-- **Weighted Avg F1-Score:** 0.818  
-- **XGBoost Accuracy:** 82.2%  
-- **ROC-AUC:** 0.897
-
+- Accuracy: **83.1%**
+- Macro Avg F1-Score: **0.830**
+- Weighted Avg F1-Score: **0.831**
+- ROC-AUC: **0.897**
+  
 ## 🛠️ Technologies Used
 - Python  
 - Scikit-learn  
@@ -59,5 +58,7 @@ The final model's performance on the test set (using a custom threshold) is as f
 4. Finally, run the summary notebook with the chosen XGBoost model for predictions and performance analysis.
 
 ---
+
+"The final Colab notebook loads the optimized XGBoost model, performs predictions, and displays a full evaluation including metrics and ROC curve."
 
 *Made with ❤️ for wine lovers and data enthusiasts!*  
